@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .button {
   min-width: 136px;
@@ -11,4 +12,19 @@
   border: none;
   padding: 12px 20px 10px 24px;
   cursor: pointer;
+
+  @include media(">desktop") {
+    min-width: 163px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    padding: 15px 28px 13px 31px;
+    transition: background 0.3s, color 0.3s;
+    border: 1px solid #151515;
+
+    &:hover {
+      background: transparent;
+      color: #151515;
+    }
+  }
 }
