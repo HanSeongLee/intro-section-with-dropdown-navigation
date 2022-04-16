@@ -11,6 +11,8 @@
     color: #686868;
 
     @include media(">desktop") {
+      font-size: 14px;
+      line-height: 16px;
       transition: color 0.3s;
 
       &:hover {

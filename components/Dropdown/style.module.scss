@@ -24,8 +24,9 @@
     color: #686868;
     cursor: pointer;
 
-
     @include media(">desktop") {
+      font-size: 14px;
+      line-height: 16px;
       grid-gap: 9px;
       transition: color 0.3s;
 
