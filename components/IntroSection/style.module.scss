@@ -16,10 +16,6 @@
     padding: 67px 40px 0;
   }
 
-  @include media(">1240px") {
-    padding: 67px 0 0;
-  }
-
   .container {
     @include media(">desktop") {
       min-width: 540px;
