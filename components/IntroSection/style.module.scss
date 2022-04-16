@@ -1,11 +1,36 @@
+@import "styles/utils";
 
 .introSection {
   text-align: center;
   padding-top: 24px;
 
+  @include media(">desktop") {
+    max-width: calc(1145px + 40px * 2);
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 125px;
+    margin: 0 auto;
+    padding: 67px 40px 0;
+  }
+
+  .container {
+    @include media(">desktop") {
+      min-width: 540px;
+      padding: 104px 0 0;
+    }
+  }
+
   .heroImage {
     width: 100%;
+    max-width: 480px;
     margin-bottom: 47.75px;
+
+    @include media(">desktop") {
+      margin-bottom: 0;
+    }
   }
 
   .title {
@@ -15,6 +40,21 @@
     letter-spacing: -0.5px;
     color: #151515;
     margin-bottom: 16px;
+
+    br {
+      display: none;
+    }
+
+    @include media(">desktop") {
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: -1.12px;
+      margin-bottom: 48px;
+
+      br {
+        display: block;
+      }
+    }
   }
 
   .description {
@@ -23,10 +63,21 @@
     line-height: 26px;
     color: #686868;
     margin-bottom: 24px;
+
+    @include media(">desktop") {
+      max-width: 445px;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 51px;
+    }
   }
 
   .learnMoreButton {
     margin-bottom: 48px;
+
+    @include media(">desktop") {
+      margin-bottom: 108px;
+    }
   }
 
   .clientContainer {
@@ -34,6 +85,10 @@
     align-items: center;
     justify-content: space-between;
     grid-gap: 24px;
+
+    @include media(">desktop") {
+      width: 477.63px;
+    }
 
     img {
       width: 100%;
