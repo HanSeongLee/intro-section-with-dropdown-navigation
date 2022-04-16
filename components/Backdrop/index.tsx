@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
 
-const Backdrou: React.FC = ({ children, ...props }) => {
+const Backdrop: React.FC = ({ children, ...props }) => {
     return (
         <div className={styles.backdrop}
              {...props}
@@ -11,4 +11,4 @@ const Backdrou: React.FC = ({ children, ...props }) => {
     );
 };
 
-export default Backdrou;
+export default Backdrop;
