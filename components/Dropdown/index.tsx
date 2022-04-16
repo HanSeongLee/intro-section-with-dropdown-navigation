@@ -1,9 +1,9 @@
-import React, {HTMLAttributes, useCallback, useState} from 'react';
+import React, {LiHTMLAttributes, useCallback, useState} from 'react';
 import styles from './style.module.scss';
 import cn from 'classnames';
 import ArrowDownIcon from '/public/icons/icon-arrow-down.svg';
 
-interface IProps extends HTMLAttributes<HTMLLIElement> {
+interface IProps extends LiHTMLAttributes<HTMLLIElement> {
     label: string;
 }
 
