@@ -1,0 +1,27 @@
+
+.nav {
+  display: flex;
+
+  .menuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menuBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 78px 24px 78px;
+  }
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+  }
+}
