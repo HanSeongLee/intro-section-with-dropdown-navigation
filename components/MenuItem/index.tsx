@@ -1,15 +1,15 @@
-import React, {LiHTMLAttributes} from 'react';
+import React, {HTMLAttributes} from 'react';
 import styles from './style.module.scss';
 import Link from 'next/link';
 
-interface IProps extends LiHTMLAttributes<HTMLLIElement> {
+interface IProps extends HTMLAttributes<HTMLDivElement> {
     href: string;
     icon?: string;
 };
 
 const MenuItem: React.FC<IProps> = ({ href, icon, children, ...props }) => {
     return (
-        <li className={styles.menuItem}
+        <div className={styles.menuItem}
             {...props}
         >
             <Link href={href}>
@@ -23,7 +23,7 @@ const MenuItem: React.FC<IProps> = ({ href, icon, children, ...props }) => {
                     {children}
                 </a>
             </Link>
-        </li>
+        </div>
     );
 };
 

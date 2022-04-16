@@ -27,9 +27,9 @@ const Dropdown: React.FC<IProps> = ({ label, children, ...props }) => {
                 <ArrowDownIcon className={styles.icon} />
             </div>
             <ul className={styles.childrenBox}>
-                <div className={styles.children}>
+                <li className={styles.children}>
                     {children}
-                </div>
+                </li>
             </ul>
         </li>
     );
