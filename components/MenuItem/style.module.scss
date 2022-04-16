@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .menuItem {
   .content {
@@ -8,6 +9,14 @@
     font-size: 16px;
     line-height: 26px;
     color: #686868;
+
+    @include media(">desktop") {
+      transition: color 0.3s;
+
+      &:hover {
+        color: #151515;
+      }
+    }
 
     .icon {
       height: 20px;
