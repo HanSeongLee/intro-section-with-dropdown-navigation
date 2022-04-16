@@ -1,0 +1,42 @@
+
+.introSection {
+  text-align: center;
+  padding-top: 24px;
+
+  .heroImage {
+    width: 100%;
+    margin-bottom: 47.75px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    color: #151515;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #686868;
+    margin-bottom: 24px;
+  }
+
+  .learnMoreButton {
+    margin-bottom: 48px;
+  }
+
+  .clientContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 24px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
