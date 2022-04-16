@@ -43,45 +43,53 @@ const Menu: React.FC = () => {
             <Backdrop className={styles.backdrop}>
                 <div className={styles.menuBox}>
                     <ul className={styles.menuContainer}>
-                        <Dropdown label={'Features'}>
-                            <MenuItem href={'#'}
-                                      icon={'/icons/icon-todo.svg'}
-                            >
-                                Todo List
-                            </MenuItem>
-                            <MenuItem href={'#'}
-                                      icon={'/icons/icon-calendar.svg'}
-                            >
-                                Calendar
-                            </MenuItem>
-                            <MenuItem href={'#'}
-                                      icon={'/icons/icon-reminders.svg'}
-                            >
-                                Reminders
-                            </MenuItem>
-                            <MenuItem href={'#'}
-                                      icon={'/icons/icon-planning.svg'}
-                            >
-                                Planning
-                            </MenuItem>
-                        </Dropdown>
-                        <Dropdown label={'Company'}>
+                        <li>
+                            <Dropdown label={'Features'}>
+                                <MenuItem href={'#'}
+                                          icon={'/icons/icon-todo.svg'}
+                                >
+                                    Todo List
+                                </MenuItem>
+                                <MenuItem href={'#'}
+                                          icon={'/icons/icon-calendar.svg'}
+                                >
+                                    Calendar
+                                </MenuItem>
+                                <MenuItem href={'#'}
+                                          icon={'/icons/icon-reminders.svg'}
+                                >
+                                    Reminders
+                                </MenuItem>
+                                <MenuItem href={'#'}
+                                          icon={'/icons/icon-planning.svg'}
+                                >
+                                    Planning
+                                </MenuItem>
+                            </Dropdown>
+                        </li>
+                        <li>
+                            <Dropdown label={'Company'}>
+                                <MenuItem href={'#'}>
+                                    History
+                                </MenuItem>
+                                <MenuItem href={'#'}>
+                                    Our Team
+                                </MenuItem>
+                                <MenuItem href={'#'}>
+                                    Blog
+                                </MenuItem>
+                            </Dropdown>
+                        </li>
+                        <li>
                             <MenuItem href={'#'}>
-                                History
+                                Careers
                             </MenuItem>
+                        </li>
+                        <li>
                             <MenuItem href={'#'}>
-                                Our Team
+                                About
                             </MenuItem>
-                            <MenuItem href={'#'}>
-                                Blog
-                            </MenuItem>
-                        </Dropdown>
-                        <MenuItem href={'#'}>
-                            Careers
-                        </MenuItem>
-                        <MenuItem href={'#'}>
-                            About
-                        </MenuItem>
+                        </li>
                     </ul>
                     <div className={styles.buttonContainer}>
                         <Link href={'#'}>

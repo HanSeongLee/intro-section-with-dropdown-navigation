@@ -1,9 +1,9 @@
-import React, {LiHTMLAttributes, useCallback, useState} from 'react';
+import React, {HTMLAttributes, useCallback, useState} from 'react';
 import styles from './style.module.scss';
 import cn from 'classnames';
 import ArrowDownIcon from '/public/icons/icon-arrow-down.svg';
 
-interface IProps extends LiHTMLAttributes<HTMLLIElement> {
+interface IProps extends HTMLAttributes<HTMLDivElement> {
     label: string;
 }
 
@@ -15,7 +15,7 @@ const Dropdown: React.FC<IProps> = ({ label, children, ...props }) => {
     }, [open]);
 
     return (
-        <li className={cn(styles.dropdown, {
+        <div className={cn(styles.dropdown, {
             [styles.open]: open,
         })}
             {...props}
@@ -31,7 +31,7 @@ const Dropdown: React.FC<IProps> = ({ label, children, ...props }) => {
                     {children}
                 </li>
             </ul>
-        </li>
+        </div>
     );
 };
 
