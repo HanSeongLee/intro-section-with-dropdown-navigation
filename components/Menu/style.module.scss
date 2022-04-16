@@ -1,12 +1,38 @@
+@import "styles/utils";
 
 .nav {
   display: flex;
+
+  @include media(">desktop") {
+    flex: 1;
+    padding-left: 62.24px;
+  }
+
+  &.open {
+    .backdrop {
+      display: block;
+    }
+  }
 
   .menuButton {
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1;
+
+    @include media(">desktop") {
+      display: none;
+    }
+  }
+
+  .backdrop {
+    display: none;
+
+    @include media(">desktop") {
+      display: block;
+      position: relative;
+      background: transparent;
+    }
   }
 
   .menuBox {
@@ -17,11 +43,70 @@
     height: 100%;
     background: #FFFFFF;
     padding: 78px 24px 78px;
+
+    @include media(">desktop") {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
   }
 
   .menuContainer {
     display: flex;
     flex-direction: column;
     grid-gap: 24px;
+
+    @include media(">desktop") {
+      flex-direction: row;
+      grid-gap: 40px;
+    }
+  }
+
+  .buttonContainer {
+    display: none;
+    align-items: center;
+    grid-gap: 40px;
+
+    @include media(">desktop") {
+      display: flex;
+    }
+
+    .loginButton {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #686868;
+
+      @include media(">desktop") {
+        transition: color 0.3s;
+
+        &:hover {
+          color: #151515;
+        }
+      }
+    }
+
+    .registerButton {
+      min-width: 104px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #686868;
+      border: 1.5px solid #686868;
+      border-radius: 14px;
+      background: transparent;
+      padding: 13px 22px 13px 23px;
+
+      @include media(">desktop") {
+        transition: color 0.3s, border-color 0.3s;
+
+        &:hover {
+          color: #151515;
+          border-color: #151515;
+        }
+      }
+    }
   }
 }
